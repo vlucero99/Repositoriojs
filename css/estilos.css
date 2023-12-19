@@ -106,6 +106,10 @@ button{
     background-color: rgb(231, 152, 165);
     border: none;
     border-radius: 40px !important;
+    
+}
+button:active {
+    transform: translateY(2px);
 }
 .alert{
     width: 500px !important;
