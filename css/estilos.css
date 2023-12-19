@@ -6,29 +6,172 @@ html{
     font-size: 62.5%;
     font-family: 'Quicksand', sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+main {
+    flex: 1; 
+}
 header{
     background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.ingresarnombre{
+    margin-left: 10px !important;
+    font-size: 1.5rem;
+    width: 300px !important;
+    text-align: center;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
 }
 .logo{
     font-size: 5rem;
     text-align: center;
     font-family: 'Dancing Script', cursive;
 }
+img{
+    width: 80px;
+    height: 100px !important; 
+    margin-right: 20px;
+}
+
 .titulo{
     font-size: 4rem;
     margin: 30px;
     text-align: center;
 }
-section{
+#divcontenedor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     grid-gap: 20px;
     margin: 50px;
 }
-img{
-    height: 300px;
+@media (max-width: 768px) {
+    #divcontenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 20px;
+        margin: 50px;
+    }
+}
+.card-img-top{
+    height: 300px !important;
+}
+.titulo-card{
+    font-size: 2.5rem;
+    text-align: center;
+
 }
 .card-text{
     font-size: 2rem;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+button{
+    width: 100px !important;
+    height: 35px !important;
+    font-size: 1.3rem!important;
+    background-color: rgb(231, 152, 165);
+    border: none;
+    border-radius: 40px !important;
+}
+.alert{
+    width: 500px !important;
+    height: 100px !important;
+    font-size: 3rem;
+    text-align: center;
+}
+
+form{
+    margin-left: 5% !important;
+    margin-right: 70% !important;
+}
+@media (max-width: 768px) {
+    form{
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+}
+input{
+    font-size: 1.8rem !important;
+}
+button{
+    font-size: 1.5rem !important;
+    color: rgb(224, 7, 80) !important;
+    border-color: palevioletred !important;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.redes1{
+    display: flex;
+    justify-content:end !important;
+    align-items: center !important;
+    list-style-type:none !important;
+}
+.wpp{
+    height: 65px !important;
+    width: 65px !important;
+    display: inline-block;
+}
+.ig{
+    height: 40px !important;
+    width: 40px !important;
+}
+.fb{
+    height: 60px !important;
+    width: 60px !important;
+    display: inline-block;
+}
+.copyright{
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+/* Carrito */
+
+.table{
+    text-align: center;
+    width: 92% !important;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+th{
+    background-color: palevioletred !important;
+}
+@media (max-width: 768px) {
+    .table{
+        width: fit-content !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        font-size: 2.2rem !important;
+    }
+}
+.BotonFinalizarCompra{
+    display: flex;
+    justify-content: center;
+}
+#FinalizarCompra{
+    width: 300px !important;
+    height: 50px !important;
+    font-size: 2.5rem !important;
+}
+.boton-sweet{
+    background-color: pink !important;
 }
